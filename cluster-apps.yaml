@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: cluster-apps
+spec:
+  generators:
+  - git:
+      repoURL: https://github.com/nasirudheen/my-argo.git 
+      revision: HEAD
+      files:
+      - path: "apps/**/config.json"
+  template:
+    metadata:
+      name: '{{cluster.name}}'
+    spec:
+      project: default 
+      source:
+        repoURL: https://github.com/nasirudheen/my-apps.git 
+        targetRevision: HEAD
+        path: '{{cluster.name}}'
+      destination:
+        name: '{{cluster.name}}'  # cluster is restricted
+        server: '{{cluster.address}}'
+        namespace: default  # namespace is restricted
