@@ -19,6 +19,6 @@ spec:
         targetRevision: HEAD
         path: '{{cluster.name}}'
       destination:
-        name: '{{cluster.name}}'  # cluster is restricted
+        name: 'apps/{{cluster.name}}'  # cluster is restricted
         server: '{{cluster.address}}'
         namespace: default  # namespace is restricted
