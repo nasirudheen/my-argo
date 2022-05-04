@@ -1,7 +1,20 @@
 {
+  "tenant": {
+    "owner": "gavin.belson@hooli.com",
+    "name": "Hooli",
+    "id": "hooli"
+  },
   "cluster": {
-    "owner": "kubernetes-admin2@cluster2.org",
-    "name": "cluster2",
-    "address": "https://192.168.122.11:6443"
+    "owner": "admin@company.com",
+    "address": "https://192.168.122.11:6443",
+    "namespace": "argocd"
   }
 }
+
+#{
+#  "cluster": {
+#    "owner": "kubernetes-admin2@cluster2.org",
+#    "name": "cluster2",
+#    "address": "https://192.168.122.11:6443"
+#  }
+#}
