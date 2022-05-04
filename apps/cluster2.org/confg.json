@@ -2,6 +2,6 @@
   "cluster": {
     "owner": "kubernetes-admin2@cluster2.org",
     "name": "cluster2.org",
-    "address": "https://192.168.20.1:443"
+    "address": "https://192.168.122.11:6443"
   }
 }
