@@ -7,6 +7,6 @@
   "cluster": {
     "owner": "admin@company.com",
     "address": "https://192.168.122.11:6443",
-    "namespace": "argocd"
+    "namespace": "testns"
   }
 }
